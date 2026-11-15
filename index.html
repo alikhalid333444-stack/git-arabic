@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Git بالعربية — اكتب ما تريد واحصل على الأمر</title>
+  <meta name="description" content="اكتب بالعربية — فصحى أو عامية — ما تريد فعله في Git، واحصل على الأمر الصحيح مع شرح مختصر وتحذير إن كان خطيراً.">
+  <meta name="theme-color" content="#e8590c">
+
+  <!-- معاينة الرابط في LinkedIn وغيره. بعد النشر استبدل og:image و og:url برابط كامل (https://...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:title" content="Git بالعربية">
+  <meta property="og:description" content="اكتب ما تريد فعله في Git بالعربية — فصحى أو عامية — واحصل على الأمر مع شرحه وتحذير إن كان خطيراً.">
+  <meta property="og:image" content="og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e8590c'/%3E%3Ccircle cx='22' cy='18' r='6' fill='white'/%3E%3Ccircle cx='22' cy='46' r='6' fill='white'/%3E%3Ccircle cx='44' cy='28' r='6' fill='white'/%3E%3Cpath d='M22 24v16M44 34c0 8-10 8-18 10' stroke='white' stroke-width='4' fill='none'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="site-head">
+      <h1><span class="logo" aria-hidden="true">&lt;/&gt;</span> Git <span class="accent">بالعربية</span></h1>
+      <p class="muted">اكتب ما تريد فعله بكلماتك — فصحى أو عامية — وسأعطيك الأمر مع شرحه.</p>
+    </header>
+
+    <form id="ask-form" class="card ask" autocomplete="off">
+      <label for="query" class="sr-only">ماذا تريد أن تفعل؟</label>
+      <input id="query" type="text" placeholder="مثلاً: أبغى أتراجع عن آخر commit بس أخلي التعديلات" autofocus>
+      <button type="submit" class="primary">أعطني الأمر</button>
+    </form>
+
+    <div id="examples" class="examples" aria-label="أمثلة">
+      <span class="muted">جرّب:</span>
+      <button type="button" class="chip" data-example="لا تحذف تعديلاتي بس الغي آخر كوميت">الغِ آخر commit</button>
+      <button type="button" class="chip" data-example="اعمل فرع جديد اسمه feature-login">فرع جديد</button>
+      <button type="button" class="chip" data-example="خبي شغلي على جنب شوي">خبّي شغلي</button>
+      <button type="button" class="chip" data-example="ابي ارفع غصب على السيرفر">رفع إجباري</button>
+    </div>
+
+    <section id="output" aria-live="polite" hidden></section>
+
+    <section class="catalog-section" aria-labelledby="catalog-title">
+      <h2 id="catalog-title">كل الأوامر <span class="count" id="command-count"></span></h2>
+      <p class="muted legend">
+        <span><span class="dot dot-safe"></span> آمن</span>
+        <span><span class="dot dot-warning"></span> تحذير</span>
+        <span><span class="dot dot-danger"></span> خطر</span>
+      </p>
+      <div id="catalog" class="catalog"></div>
+    </section>
+
+    <footer class="site-foot muted">
+      <p>هذه الأداة تعرض الأوامر فقط ولا تنفّذ أي شيء على جهازك. راجع الأمر دائماً قبل تشغيله.</p>
+      <p>مشروع مفتوح المصدر — HTML وCSS وJavaScript بلا أي مكتبات. اضغط <kbd>/</kbd> للبحث.</p>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
