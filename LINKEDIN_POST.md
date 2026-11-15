@@ -1,7 +1,6 @@
 # منشور LinkedIn — Git بالعربية
 
 > أرفق مع المنشور: `social/screenshot-desktop.png` و`social/screenshot-mobile.png` (المنشورات ذات الصور تنتشر أكثر من الروابط وحدها)، وضع الرابط في المنشور أو في أول تعليق.
-> استبدل [الرابط] و[رابط الكود] قبل النشر.
 
 ---
 
@@ -30,8 +29,8 @@
 التقنية: HTML وCSS وJavaScript فقط، بلا أي مكتبات، و32 أمراً، و95 اختباراً.
 الأداة تعرض الأوامر فقط ولا تنفّذ شيئاً.
 
-🔗 جرّبها: [الرابط]
-💻 الكود مفتوح: [رابط الكود]
+🔗 جرّبها: https://alikhalid333444-stack.github.io/git-arabic/
+💻 الكود مفتوح: https://github.com/alikhalid333444-stack/git-arabic
 
 ما الأمر الذي تتمنى أن تضيفه؟ اكتبه في التعليقات بالعربي، وسأرى إن كانت الأداة تفهمه 😄
 
@@ -56,7 +55,7 @@ What I learned:
 
 Plain HTML/CSS/JS, zero dependencies, 32 commands, 95 tests. It only shows commands — never runs them.
 
-🔗 Try it: [link]
-💻 Code: [repo]
+🔗 Try it: https://alikhalid333444-stack.github.io/git-arabic/
+💻 Code: https://github.com/alikhalid333444-stack/git-arabic
 
 #Git #JavaScript #Arabic #WebDev #SideProject
